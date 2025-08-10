@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default async function ServiceDetailsPage({params}) {
+export default function ServiceDetailsPage({params}) {
     const id = params.id;
   return (
     <div>

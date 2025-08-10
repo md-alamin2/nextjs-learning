@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export default async function ServicesPage() {
+export default function ServicesPage() {
   const data = [
     {
       id: 1,
