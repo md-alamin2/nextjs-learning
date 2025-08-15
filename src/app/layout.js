@@ -18,6 +18,7 @@ export const metadata = {
     default:"Learning Next.js",
     template:"%s | Learning Next.js"
   },
+  keywords: ['Next.js', 'React', 'JavaScript'],
   description: "A comprehensive guide to learning Next.js",
 };
 
@@ -30,7 +31,7 @@ export default function RootLayout({ children }) {
         <nav>
           <Navbar />
         </nav>
-        <main className="h-screen mt-10 place-items-center">
+        <main className="min-h-screen mt-10 place-items-center">
           {children}
         </main>
         <footer>
