@@ -1,7 +1,9 @@
 "use client"
+import { useRouter } from 'next/navigation';
 import React from 'react'
 
 export default function UserAddForm() {
+    const router = useRouter();
     const handleSubmit = async (e)=>{
         e.preventDefault();
         const form = e.target;
@@ -16,7 +18,7 @@ export default function UserAddForm() {
             body: JSON.stringify(newUser)
         })
         const result = await res.json();
-        console.log(result)
+        result.insertedId&&router.push("/users")
     }
   return (
     <div>

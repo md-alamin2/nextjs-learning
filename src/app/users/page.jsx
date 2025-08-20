@@ -1,3 +1,4 @@
+import { redirect } from 'next/navigation';
 import React from 'react'
 
 export default async function UsersPage() {
@@ -5,7 +6,9 @@ export default async function UsersPage() {
       cache: "force-cache"
     })
     const {data}= await res.json();
-    console.log(data)
+    // if(data.length >3){
+    //   redirect("/")
+    // }
   return (
     <div>
       <h2 className='font-bold text-xl'>Users List</h2>
