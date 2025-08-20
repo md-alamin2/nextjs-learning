@@ -25,6 +25,12 @@ export default function Navbar() {
         <li>
           <Link href="/meals">Meals</Link>
         </li>
+        <li>
+          <Link href="/users">Users</Link>
+        </li>
+        <li>
+          <Link href="/users/add">Add User</Link>
+        </li>
       </ul>
     </div>
   );
